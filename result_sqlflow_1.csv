@@ -1,0 +1,3 @@
+target_database,target_table,tartet_column,source_database,source_table,source_column,join_type
+,VSAL,"DEPARTMENT",,emp,deptno,select,
+,VSAL,"SALARY",,emp,sal,select,

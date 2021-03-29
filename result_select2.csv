@@ -1,0 +1,3 @@
+target_database,target_table,tartet_column,source_database,source_table,source_column,join_type
+,rrr,acc_user,,accounts,username,select,
+,rrr,role_user,,account_roles,role_id,select,

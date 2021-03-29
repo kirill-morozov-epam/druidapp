@@ -1,0 +1,5 @@
+create table rrr as select innertable.clearuser from
+(select inn.acc_user as clearuser from (select
+    ac.username as acc_user,
+    ro.role_id as role_user
+from accounts ac join account_roles ro on ac.user_id = ro.user_id) as inn) as innertable

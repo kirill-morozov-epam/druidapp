@@ -21,10 +21,29 @@ public class ColumnImpactTest {
 		
 		QueryPrepare prepare = new QueryPrepare();
 		
-		final Connection connection = MetadataComplete.connMysqlDataBase("10.64.255.36","sa","sa","sa");
-		
-		String resource = "teradata-mrg-0.txt";
-		String output = "result_test.csv";
+//		final Connection connection = MetadataComplete.connMysqlDataBase("10.64.255.36","sa","sa","sa");
+		final Connection connection = MetadataComplete.connMysqlDataBase("ecsa00401134.epam.com:3306","test","root","password");
+
+//		String resource = "teradata-mrg-0.txt";
+//		String output = "result_test.csv";
+
+//		String resource = "select.txt";
+//		String output = "result_select.csv";
+
+//		String resource = "select2.txt";
+//		String output = "result_select2.csv";
+
+//		String resource = "create_view.txt";
+//		String output = "result_create_view.csv";
+
+//		String resource = "greenplum_sqlflow_1.sql";
+//		String output = "result_greenplum_sqlflow_1.csv";
+
+		String resource = "sqlflow_1.sql";
+		String output = "result_sqlflow_1.csv";
+
+
+
 		File file = new File(output);
         BufferedWriter bw = null;
         
